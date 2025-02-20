@@ -57,6 +57,12 @@ float resta(){
 }
 
 float multiplicacion(){
+    float a, b;
+    printf("Escribe los números a multiplicar.\n");
+    scanf ("%d", &a);
+    scanf ("%d", &b);
+    resultado = a * b;
+    
     return resultado;
 }
 

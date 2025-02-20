@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int resultado = 0;
+float resultado = 0;
 
 int main(){
     menu();
@@ -48,18 +48,18 @@ int menu(){
     }
 }
 
-int suma(){
+float suma(){
     return resultado;
 }
 
-int resta(){
+float resta(){
     return resultado;
 }
 
-int multiplicacion(){
+float multiplicacion(){
     return resultado;
 }
 
-int division(){
+float division(){
     return resultado;
 }

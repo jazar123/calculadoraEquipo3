@@ -3,7 +3,7 @@
 // Herrera Medina Erick F
 // Mac Comish Sanchez Vale
 // Perez Hernandez Jesus A
-
+// Zamarron Ramirez Javier
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,7 +14,6 @@ float multiplicacion();
 float division();
 
 float resultado = 0;
-
 
 void menu(){
     printf("Selecciona la operación a realizar en la calculadora\n");
@@ -70,7 +69,10 @@ float resta(){
 }
 
 float multiplicacion(){
-    
+    float a, b;
+    printf("Escribe los números a multiplicar:\n");
+    scanf("%f %f", &a, &b);
+    resultado = a * b;
     return resultado;
 }
 

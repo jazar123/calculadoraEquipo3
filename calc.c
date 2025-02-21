@@ -64,7 +64,7 @@ float resta(){
     scanf("%f \n",&x);
     scanf("%f",&y);
     resultado=x-y;
-    Printf("Resultado:%f", resultado);
+    printf("Resultado:%f", resultado);
     return resultado;
 }
 

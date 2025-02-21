@@ -8,6 +8,7 @@
 #include <stdlib.h>
 
 float resultado = 0;
+float resta;
 
 int main(){
     menu();
@@ -53,6 +54,12 @@ float suma(){
 }
 
 float resta(){
+    float x, y;
+    float resultado;
+    cout<<"Ingrese los valores";
+    cin >> x;
+    cin >> y;
+    resultado=x-y;
     return resultado;
 }
 

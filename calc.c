@@ -60,10 +60,11 @@ float suma(){
 float resta(){
     float x, y;
     float resultado;
-    printf("Ingrese primero el valor más grande");
-    scanf("%f",&x);
+    printf("Ingrese primero el valor más grande\n");
+    scanf("%f \n",&x);
     scanf("%f",&y);
     resultado=x-y;
+    Printf("Resultado:%f", resultado);
     return resultado;
 }
 

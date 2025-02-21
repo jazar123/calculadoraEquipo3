@@ -27,13 +27,14 @@ void menu(){
     switch(opcion){
         case 1:
             resultado= suma();
-            printf ("Resultado: %.2f/n", resultado);
+            printf ("Resultado: %.2f\n", resultado);
             break;
         case 2:
             resta();
             break;
         case 3:
             multiplicacion();
+            printf ("Resultado: %.2f\n", resultado);
             break;
         case 4:
             division();

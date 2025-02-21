@@ -6,6 +6,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+void menu();
+float suma();
 
 float resultado = 0;
 
@@ -15,7 +17,7 @@ int main(){
     return 0;
 }
 
-int menu(){
+void menu(){
     printf("Selecciona la operación a realizar en la calculadora\n");
     printf("1. Suma\n");
     printf("2. Resta\n");
@@ -28,7 +30,8 @@ int menu(){
 
     switch(opcion){
         case 1:
-            suma();
+            resultado= suma();
+            printf ("Resultado: %.2f/n", resultado);
             break;
         case 2:
             resta();
@@ -49,7 +52,12 @@ int menu(){
 }
 
 float suma(){
-    return resultado;
+    float a, b;
+    printf("Ingresar primer numero: ");
+    scanf("%f", &a);
+    printf("Ingresar segundo numero: ");
+    scanf("%f", &b);
+    return a + b;
 }
 
 float resta(){

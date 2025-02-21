@@ -9,6 +9,8 @@
 
 float resultado = 0;
 
+float multiplicacion();
+
 int main(){
     menu();
     
@@ -58,11 +60,9 @@ float resta(){
 
 float multiplicacion(){
     float a, b;
-    printf("Escribe los números a multiplicar.\n");
-    scanf ("%d", &a);
-    scanf ("%d", &b);
+    printf("Escribe los números a multiplicar:\n");
+    scanf("%f %f", &a, &b);
     resultado = a * b;
-    
     return resultado;
 }
 

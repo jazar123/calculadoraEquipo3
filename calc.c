@@ -12,9 +12,7 @@ float suma();
 float resta();
 float multiplicacion();
 float division();
-
 float resultado = 0;
-
 void menu(){
     printf("Selecciona la operación a realizar en la calculadora\n");
     printf("1. Suma\n");
@@ -61,9 +59,9 @@ float suma(){
 float resta(){
     float x, y;
     float resultado;
-    cout<<"Ingrese los valores";
-    cin >> x;
-    cin >> y;
+    printf("Ingrese los valores");
+    scanf("%f",&x);
+    scanf("%f",&y);
     resultado=x-y;
     return resultado;
 }
@@ -92,4 +90,6 @@ float division(){
     }
     return resultado;
 }
-
+int main(){
+    menu();
+    }

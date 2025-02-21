@@ -16,59 +16,22 @@ float resta();
 float multiplicacion();
 float division();
 
-int main(){
-    menu();
-    return 0;
-}
-
-int menu(){
-    int opcion;
-
-    printf("Selecciona la operación a realizar en la calculadora\n");
-    printf("1. Suma\n");
-    printf("2. Resta\n");
-    printf("3. Multiplicación\n");
-    printf("4. División\n");
-    printf("5. Salir\n");
-    printf("Opción: ");
-    
-    scanf("%d", &opcion);
-
-    switch(opcion){
-        case 1:
-            suma();
-            break;
-        case 2:
-            resta();
-            break;
-        case 3:
-            multiplicacion();
-            break;
-        case 4:
-            division();
-            break;
-        case 5:
-            exit(0);
-            break;
-        default:
-            printf("Opción no válida\n");
-            break;
-    }
-    return 0;
-}
-
 float suma(){
-
     return resultado;
 }
 
 float resta(){
-
+    float x, y;
+    float resultado;
+    cout<<"Ingrese los valores";
+    cin >> x;
+    cin >> y;
+    resultado=x-y;
     return resultado;
 }
 
 float multiplicacion(){
-
+    
     return resultado;
 }
 
@@ -88,3 +51,4 @@ float division(){
     }
     return resultado;
 }
+
